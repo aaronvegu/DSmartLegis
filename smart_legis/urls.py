@@ -21,4 +21,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.render_index, name='index'),
+    path('contratos/', views.contratos, name='contratos')
 ]
