@@ -6,6 +6,10 @@ __pycache__
 db.sqlite3
 media
 
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
 *.DS_Store
 .DS_Store
 
