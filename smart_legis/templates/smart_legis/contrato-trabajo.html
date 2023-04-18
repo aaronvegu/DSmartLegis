@@ -19,78 +19,78 @@
             <div class="col-lg-8 col-xl-6">
                 <form id="form" action="#" method="post">
                     <fieldset>
-                        <legend>Step 1: Personal Information</legend>
-                        <label for="contract-date">Fecha del contrato:</label>
-                        <input type="date" id="contract-date" name="contract-date" /><br />
+                        <legend>Paso 1. Informacion general</legend>
+                        <label for="contractDate">Fecha del contrato:</label>
+                        <input type="date" id="contractDate" name="contractDate" required/><br />
 
                         <label for="city">Ciudad:</label>
-                        <input type="text" id="city" name="city" /><br />
+                        <input type="text" id="city" name="city" required/><br />
 
                         <label for="state">Estado:</label>
-                        <input type="text" id="state" name="state" /><br />
+                        <input type="text" id="state" name="state" required/><br />
 
-                        <label for="probation-days">Dias de Prueba:</label>
-                        <input type="number" id="probation-days" name="probation-days" /><br />
+                        <label for="probationDays">Dias de Prueba:</label>
+                        <input type="number" id="probationDays" name="probationDays" required/><br />
 
-                        <button onclick="next()">Next</button>
+                        <button onclick="next()">Siguiente</button>
                     </fieldset>
 
                     <fieldset>
-                        <legend>Step 2: Business Information</legend>
-                        <label for="business-name">Razon Social:</label>
-                        <input type="text" id="business-name" name="business-name" /><br />
+                        <legend>Paso 2. Datos del patron</legend>
+                        <label for="businessName">Razon Social:</label>
+                        <input type="text" id="businessName" name="businessName" required/><br />
 
                         <label for="street">Calle:</label>
-                        <input type="text" id="street" name="street" /><br />
+                        <input type="text" id="street" name="street" required/><br />
 
                         <label for="colony">Colonia:</label>
-                        <input type="text" id="colony" name="colony" /><br />
+                        <input type="text" id="colony" name="colony" required/><br />
 
-                        <label for="ext-number">Num Exterior:</label>
-                        <input type="number" id="ext-number" name="ext-number" /><br />
+                        <label for="extNumber">Num Exterior:</label>
+                        <input type="number" id="extNumber" name="extNumber" required/><br />
 
-                        <label for="int-number">Num Interior:</label>
-                        <input type="number" id="int-number" name="int-number" /><br />
+                        <label for="intNumber">Num Interior:</label>
+                        <input type="number" id="intNumber" name="intNumber"/><br />
 
-                        <label for="postal-code">Codigo Postal:</label>
-                        <input type="number" id="postal-code" name="postal-code" /><br />
+                        <label for="postalCode">Codigo Postal:</label>
+                        <input type="number" id="postalCode" name="postalCode" required/><br />
 
-                        <label for="business-state">Estado:</label>
-                        <input type="text" id="business-state" name="business-state" /><br />
+                        <label for="businessState">Estado:</label>
+                        <input type="text" id="businessState" name="businessState" required/><br />
 
-                        <label for="business-city">Ciudad:</label>
-                        <input type="text" id="business-city" name="business-city" /><br />
+                        <label for="businessCity">Ciudad:</label>
+                        <input type="text" id="businessCity" name="businessCity" required/><br />
 
-                        <button onclick="prev()">Previous</button>
-                        <button onclick="next()">Next</button>
+                        <button onclick="prev()">Regresar</button>
+                        <button onclick="next()">Siguiente</button>
                     </fieldset>
 
                     <fieldset>
-                        <legend>Step 1</legend>
-                        <label for="apellidoPaterno">Apellido Paterno:</label>
+                        <legend>Paso 3. Datos del empleado</legend>
+                        <label for="fatherLastName">Apellido Paterno:</label>
                         <input
                         type="text"
-                        id="apellidoPaterno"
-                        name="apellidoPaterno"
+                        id="fatherLastName"
+                        name="fatherLastName"
                         required
                         />
                         <br />
-                        <label for="apellidoMaterno">Apellido Materno:</label>
+                        <label for="motherLastName">Apellido Materno:</label>
                         <input
                         type="text"
-                        id="apellidoMaterno"
-                        name="apellidoMaterno"
+                        id="motherLastName"
+                        name="motherLastName"
                         required
                         />
                         <br />
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required />
+                        <label for="employeeName">Nombre:</label>
+                        <input type="text" id="employeeName" name="employeeName" required />
                         <br />
                         <label>Sexo:</label>
                         <input
                         type="radio"
                         id="masculino"
-                        name="sexo"
+                        name="gender"
                         value="masculino"
                         required
                         />
@@ -98,36 +98,36 @@
                         <input
                         type="radio"
                         id="femenino"
-                        name="sexo"
+                        name="gender"
                         value="femenino"
                         required
                         />
                         <label for="femenino">Femenino</label>
                         <br />
-                        <label for="edad">Edad:</label>
-                        <input type="number" id="edad" name="edad" required />
+                        <label for="age">Edad:</label>
+                        <input type="number" id="age" name="age" required />
                         <br />
                         <label for="curp">CURP:</label>
                         <input type="text" id="curp" name="curp" required />
 
-                        <button onclick="prev()">Previous</button>
-                        <button onclick="next()">Next</button>
+                        <button onclick="prev()">Regresar</button>
+                        <button onclick="next()">Siguiente</button>
                     </fieldset>
 
                     <fieldset>
-                        <legend>Step 1</legend>
-                        <label for="puesto">Puesto:</label>
-                        <input type="text" id="puesto" name="puesto" required />
+                        <legend>Paso 4. Datos del puesto</legend>
+                        <label for="position">Puesto:</label>
+                        <input type="text" id="position" name="position" required />
                         <br />
-                        <label for="salario">Salario:</label>
-                        <input type="number" id="salario" name="salario" required />
+                        <label for="salary">Salario:</label>
+                        <input type="number" id="salary" name="salary" required />
                         <br />
                         <label>Plazo de Pago:</label>
                         <br />
                         <input
                         type="radio"
                         id="quincenal"
-                        name="plazo"
+                        name="payment"
                         value="quincenal"
                         required
                         />
@@ -136,52 +136,58 @@
                         <input
                         type="radio"
                         id="semanal"
-                        name="plazo"
+                        name="payment"
                         value="semanal"
                         required
                         />
                         <label for="semanal">Semanal</label>
                         <br />
-                        <label for="aguinaldo">Días de aguinaldo:</label>
-                        <input type="number" id="aguinaldo" name="aguinaldo" required />
+                        <label for="bonus">Días de aguinaldo:</label>
+                        <input type="number" id="bonus" name="bonus" required />
                         <br />
-                        <label for="entrada">Horario de entrada:</label>
-                        <input type="time" id="entrada" name="entrada" required />
+                        <label for="entryTime">Horario de entrada:</label>
+                        <input type="time" id="entryTime" name="entryTime" required />
                         <br />
-                        <label for="salida">Horario de salida:</label>
-                        <input type="time" id="salida" name="salida" required />
+                        <label for="departureTime">Horario de salida:</label>
+                        <input type="time" id="departureTime" name="departureTime" required />
                         <br />
                         <label>Días de trabajo:</label>
                         <br />
-                        <input type="checkbox" id="lunes" name="dias" value="lunes" />
+                        <input type="checkbox" id="lunes" name="workDays" value="lunes" />
                         <label for="lunes">Lunes</label>
                         <br />
-                        <input type="checkbox" id="martes" name="dias" value="martes" />
+                        <input type="checkbox" id="martes" name="workDays" value="martes" />
                         <label for="martes">Martes</label>
                         <br />
-                        <input type="checkbox" id="miercoles" name="dias" value="miercoles" />
+                        <input type="checkbox" id="miercoles" name="workDays" value="miercoles" />
                         <label for="miercoles">Miércoles</label>
                         <br />
-                        <input type="checkbox" id="jueves" name="dias" value="jueves" />
+                        <input type="checkbox" id="jueves" name="workDays" value="jueves" />
                         <label for="jueves">Jueves</label>
                         <br />
-                        <input type="checkbox" id="viernes" name="dias" value="viernes" />
+                        <input type="checkbox" id="viernes" name="workDays" value="viernes" />
                         <label for="viernes">Viernes</label>
                         <br />
-                        <input type="checkbox" id="sabado" name="dias" value="sabado" />
+                        <input type="checkbox" id="sabado" name="workDays" value="sabado" />
                         <label for="sabado">Sábado</label>
                         <br />
-                        <input type="checkbox" id="domingo" name="dias" value="domingo" />
+                        <input type="checkbox" id="domingo" name="workDays" value="domingo" />
                         <label for="domingo">Domingo</label>
                         <br />
                             
-                        <button onclick="prev()">Previous</button>
-                        <button onclick="next()">Next</button>
+                        <button onclick="prev()">Regresar</button>
+                        <input type="submit">
                     </fieldset>
                 </form> 
+                <div id="review" style="display: none">
+                    <h2>Revisar</h2>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+{% load static %}
+<script src="{% static 'smart_legis/js/scripts.js' %}"></script>
 
 {% endblock content %}

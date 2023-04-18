@@ -7,6 +7,7 @@ db.sqlite3
 media
 
 # Byte-compiled / optimized / DLL files
+smart_legis/__pycache__/
 __pycache__/
 *.py[cod]
 
