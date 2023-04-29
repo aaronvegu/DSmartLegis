@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %} Contratos {% endblock title %}
+
+{% block content %}
+
+<!-- Page Content-->
+<section class="py-5">
+  <div class="container px-5 my-5">
+    <div class="text-center mb-5">
+      <h1 class="fw-bolder">Contratos</h1>
+      <p class="lead fw-normal text-muted mb-0">
+        <b>¿Necesitas un contrato?</b> Selecciona uno de nuestra lista,
+        llena los datos requeridos y obten un contrato con validez legal
+        al momento.
+      </p>
+    </div>
+    <div class="row gx-5">
+      <div class="col-lg-6">
+        <div class="position-relative mb-5">
+          <img
+            class="img-fluid rounded-3 mb-3"
+            {% load static %}
+            src="{% static 'smart_legis/assets/contrato-img.png' %}"
+            alt="Fotografia de persona firmando contrato"
+          />
+          <a
+            class="h3 fw-bolder text-decoration-none link-dark stretched-link"
+            href="{% url 'contrato-trabajo' %}"
+            >Contrato Individual de Trabajo<br />Tiempo Determinado</a
+          >
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="position-relative mb-5">
+          <img
+            class="img-fluid rounded-3 mb-3"
+            {% load static %}
+            src="{% static 'smart_legis/assets/contrato-2-img.png' %}"
+            alt="Fotografia de persona firmando contrato"
+          />
+          <a
+            class="h3 fw-bolder text-decoration-none link-dark stretched-link"
+            href="#!"
+            >Contrato Individual de Trabajo<br />Tiempo Indeterminado</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-light">
+  <div class="container px-5 my-5">
+    <h2 class="display-4 fw-bolder mb-4">¿Tienes algunda duda?</h2>
+    <a class="btn btn-lg btn-primary" href="#!">Contáctanos</a>
+  </div>
+</section>
+
+{% endblock content %}
